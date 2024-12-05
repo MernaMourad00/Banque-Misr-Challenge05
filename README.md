@@ -4,29 +4,51 @@ Overview:
 
 The Task Management System is a Spring Boot-based application designed to manage tasks for users. The application allows creating, updating, deleting, retrieving tasks based on various filters (such as title, status, due date, etc.),and send reminders before the deadline of the tasks.
 
+
+
 Features:
 
 Create Task: Create a new task and assign it to a user.
+
 Update Task: Modify the details of an existing task.
+
 Delete Task: Remove a task from the system.
+
 Get Tasks: Retrieve tasks based on different filters like title, description, status, and due date.
+
 Assign Tasks to Users: Tasks can be assigned to users and queried by user ID.
+
 Status Management: Tasks can be marked as DONE or other statuses as per business logic.
+
 Email Notifications: Sends email notifications to users one day before the task deadline using SMTP.
+
 Task Deadline Notification Scheduler: A scheduler automatically sends notifications to users about tasks with upcoming deadlines (1 day before).
+
+
 
 Technologies Used:
 
 Java version: 17
+
 Spring Boot version: 3.4.0
+
 Spring Data JPA.
+
 MySql database.
+
 Flyway: Used for database migrations to insert initial users and tasks. This data can be used to test the application, but due to password encryption issues, new users must be registered and logged in to obtain a token for API testing.
+
 MapStruct.
+
 JUnit & Mockito: For unit testing and mocking dependencies.
+
 SMTP (Simple Mail Transfer Protocol).
-Spring Scheduler:.
+
+Spring Scheduler.
+
 ModelMapper: For mapping DTOs to entities and vice versa.
+
+
 
 
 Notes for Reviewers:
